@@ -1,3 +1,6 @@
+#ifndef _TICTACTOE_H_
+#define _TICTACTOE_H_
+
 #include <sstream>
 #include <cstdint>
 #include <iostream>
@@ -67,6 +70,8 @@ public:
   Color color_on(Square s) const;
   Color side_to_move() const;
   bool pos_is_ok() const;
+  Bitboard colors() const;
+  Bitboard colors(Color c) const;
 private:
   int gamePly;
   Bitboard byColorBB[COLOR_NB + 1];
@@ -105,3 +110,5 @@ constexpr Square make_square(File f, Rank r) {
 }
 
 bool win(const Position& pos); 
+
+#endif // _TICTACTOE_H_

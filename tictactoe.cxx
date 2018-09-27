@@ -12,7 +12,7 @@ const EvalMask EvalMaskArray[] = {
   RANK1_MASK,RANK2_MASK, RANK3_MASK, FILE1_MASK, FILE2_MASK, FILE3_MASK
 };
 
-const WIN_BITS_NUM = 3;
+const int WIN_BITS_NUM = 3;
 
 }
 
